@@ -105,6 +105,8 @@ int main(void) {
         std::cout << "Wordle: ";
         std::cin >> input;
 
+        if (input == "q" || input == "exit") return 0;
+
         if (wordleInvalid(input)) {
             std::cout << "That wasn't five letters...\n";
             continue;
