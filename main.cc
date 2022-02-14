@@ -123,6 +123,6 @@ int main(void) {
             break;
         }
     }
-    std::cout << "The word was " << word_of_day << std::endl;
+    if (turns == 6) std::cout << "The word was " << word_of_day << std::endl;
     return 0;
 }
