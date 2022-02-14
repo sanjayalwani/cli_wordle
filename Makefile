@@ -1,2 +1,2 @@
 default:
-	g++ main.cc db_wrapper.cc -lsqlite3 -o main
+	g++ main.cc -lsqlite3 -o main -O3
