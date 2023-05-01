@@ -5,7 +5,7 @@ from os import path
 
 # Constants
 WORD_LIST_FILENAME = 'english_words_original_wordle.txt'
-DB_NAME = 'words.db'
+DB_NAME = '.words.db'
 
 # Set up DB
 conn = sqlite3.connect(DB_NAME) 

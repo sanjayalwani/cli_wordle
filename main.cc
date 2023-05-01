@@ -10,7 +10,7 @@
 #include "db_structs.hh"
 #include "include/sqlite_orm.h"
 
-#define DB_NAME "words.db"
+#define DB_NAME ".words.db"
 
 using std::chrono::duration_cast;
 using namespace sqlite_orm;
@@ -113,7 +113,7 @@ int main(void) {
         }
         int word_exists = storage.get_all<Wordles>(where(c(&Wordles::word) == input)).size();
         if (!word_exists) {
-            std::cout << "That is not a word brother\n";
+            std::cout << "That word is not in our dictionary\n";
             continue;
         }
         ++turns;
