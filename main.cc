@@ -172,7 +172,7 @@ int main(void) {
 
     std::string word_of_day = randomWordle[0].word;
 
-    std::cout << "==== CPP Wordle (Version 1.0.1) ====\n";
+    std::cout << "==== CLI Wordle (Version 1.0.1) ====\n";
     std::cout << "\t type q to leave\n";
     game_loop(word_of_day);
 
